@@ -1,0 +1,61 @@
+            ################################################### 
+            # ORIENTAÇÕES SOBRE O USO DA FERRAMENTA DE BACKUP #
+            ###################################################     
+
+COMO USAR: Execute o script backup-cli.sh em um terminal e siga as instruções.
+
+SEGURANÇA: Esse script efetua alterações somente após os receber a confirmação
+para iniciar o backup, portanto, mesmo após a seleção de diretórios é possível 
+encerrar o programa no momento da confirmação de backup. Nesse caso, mantém-se
+os diretórios inalterados.
+
+DIRETÓRIOS:
+      
+   -FORMATO: Os diretórios especificados tanto para ORIGEM quanto para DESTINO
+    seguem um padrão de escrita: 
+       
+       -JÁ EXISTENTES: DEVEM ser escritos em um formato padrão, 
+        exemplo: home/user/origem
+        O exemplo acima é o mesmo que /home/user/origem/
+        Barras / são opcionais.
+
+       -CRIAR UM NOVO DIRETÓRIO DE DESTINO: O programa propõe a criação de um 
+        diretório de DESTINO durante a execução, por padrão este será criado 
+        no HOME do usuário, o formato deve ser: /destino/
+        As barras / são opicionais, o script lida com elas. DEVE ser digitado 
+        somente o nome do NOVO diretório, NÃO digite o caminho inteiro durante
+        a CRIAÇÃO, o programa cria por padrão no diretório HOME e não suporta
+        outros diretórios. Para utilizar outro diretório, crie o diretório
+        antes de executar o script, em seguida execute e selecione o diretório
+        já existente.
+   
+   -ORIGEM: Entende-se por ORIGEM o diretório que será replicado, isto é, seus 
+   arquivos, metadados e permissões serão copiados para o novo diretório.
+   Não há risco de perda de dados na ORIGEM.
+
+   -DESTINO: Entende-se por DESTINO o diretório ou dispositivo que se tornará a 
+   réplica do diretório de ORIGEM. Note que os arquivos do DESTINO podem ser 
+   apagados durante o processo de backup, por isso, preste muita ATENÇÃO ao 
+   selecionar um DESTINO. O diretório de destino deve ser selecionado ANTES da 
+   execução do script.
+
+SINCRONIZAÇÃO: Este programa oferece duas opções de BACKUP.
+    
+   1. CUIDADO: São excluídos do DESTINO os arquivos que NÃO existem na ORIGEM. 
+   
+   2. OPÇÃO SEGURA: São mantidos no DESTINO todos os arquivos.
+
+   -LISTA DE EXCLUSÃO: O programa irá solicitar a digitação de arquivos que 
+    ficarão de fora do backup, digite o nome dos arquivos e aperte ENTER ao
+    terminar, se não houver nennhum somente aperte ENTER. Os nomes escritos   
+    errado serão desconsiderados. O arquivo .ignore.txt armazena a lista de 
+    exclusão do rsync, não há necessidade de marcá-lo para exclusão, o programa 
+    o fará automaticamente.
+
+AGENDAMENTO: O programa oferece 8 opções de agendamento e as configura de forma
+automática. Informações mais claras estão disponíveis na etapa de AGENDAMENTO, 
+durante a execução do programa. A ferramenta cron é utilizada para o agendamento,
+as informações de agendamento são armazenadas no arquivo crontab, para verificar 
+abra um terminal e entre com o comando crontab -e.
+
+################ ROLE A PÁGINA PARA CIMA PARA LER TODO O TEXTO ################    
