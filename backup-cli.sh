@@ -257,7 +257,7 @@ else
     titulo
     echo "INICIANDO BACKUP..."
     echo
-    rsync -auvh $origem/ $destino/ --progress --exclude-from=.ignore.txt --log-file=$logfile
+    rsync -auvh $origem/ $destino/ --progress --exclude-from=$origem/.ignore.txt --log-file=$logfile
     backup="rsync -auvh $origem/ $destino/ --progress --exclude-from=$origem/.ignore.txt --log-file=$logfile"
 fi
 echo
