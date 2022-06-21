@@ -1,5 +1,5 @@
 **Backup CLI é uma aplicação de console para a realização de backups 
-sincronizáveis e agendados. COMECE AQUI: 
+sincronizáveis e agendados. COMECE AQUI:** 
 
    *É necessário atribuir permissão de execução ao script backup-cli.sh para
     que o programa funcione corretamente. Abra um terminal, navegue até o 
