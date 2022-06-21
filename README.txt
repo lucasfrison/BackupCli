@@ -3,7 +3,7 @@ sincronizáveis e agendados. COMECE AQUI:
 
    É necessário atribuir permissão de execução ao script backup-cli.sh para
    que o programa funcione corretamente. Abra um terminal, navegue até o 
-   diretório onde o script o arquivo de ajuda estão armazenados e execute o
+   diretório onde o script e o arquivo de ajuda estão armazenados e execute o
    comando: chmod +x backup-cli.sh 
 
    O programa é iniciado executando o script backup-cli.sh em um terminal.
