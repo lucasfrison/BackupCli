@@ -18,7 +18,7 @@ de dúvidas quanto ao uso do script:
    ou durante a execução do próprio script quando a opção for disponibilizada.
 
 IMPORTANTE: Para o funcionamento correto do programa, os arquivos 
-backup-cli.sh e backup-help.txt PRECISAM:
+backup-cli.sh, backup-help.txt e backup-lib.sh PRECISAM:
    
    Ser armazenados dentro do mesmo diretório ou pasta.
   
