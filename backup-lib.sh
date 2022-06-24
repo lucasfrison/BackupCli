@@ -20,7 +20,7 @@ valida_op () {
    op=$1
    if [ "$op" = "2" ]; then
        titulo
-       cat backup-help.txt
+       cat /usr/bin/backup-help.txt
        echo
        echo "APERTE ENTER PARA CONTINUAR"
        read key
